@@ -22,12 +22,10 @@
   ],
   "transaction": [
     {
-      "idBook": "L0gw6B3AL",
-      "idUser": "btg8PvTX8"
-    },
-    {
-      "idBook": "L0gw6B3AL",
-      "idUser": "btg8PvTX8"
+      "idBook": "hePMLfnMh",
+      "idUser": "btg8PvTX8",
+      "iscomplete": false,
+      "id": "a7mCWmuN2"
     }
   ]
 }
