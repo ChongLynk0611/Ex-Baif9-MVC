@@ -2,18 +2,11 @@ var express  = require('express');
 var router = express.Router();
 
 var db = require('../db');
-
-router.get('/' , (req, res)=>{
-    res.render('transaction/transaction');
-})
-router.get('/create',(req,res)=>{
-    res.render('transaction/create');
-})
+var controller = require('../controllers/transaction.controller');
+router.get('/' ,controller.index);
+router.get('/create',controller.create);
 
 
-router.post('/' , (req ,res)=>{
-    db.get('transaction').push(req.body).write();
-    res.redirect('/transaction');
-})
+router.post('/' ,controller.postIndex );
 
 module.exports = router;
